@@ -5,10 +5,10 @@ body{
 }
 .header{
     position: fixed;
-    left: 277px;
+    left: 227px;
     top: 0px;
-    width: calc(100% - 345px);
-    height: 125px;
+    width: calc(100% - 295px);
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,7 +32,7 @@ body{
 }
 .ic li{
     list-style-type: none;
-    border: 1px solid #000;
+    border: 1px solid #D8B9C3;
     border-radius: 16px;
     height: 58px;
     width: 56px;
@@ -63,11 +63,12 @@ img{
     left: 0px;
     top: 0px;
     height: calc(100% - 4px);
-    width: 275px;
+    width: 225px;
+
 }
 .logo{
     display: flex;
-    height: 125px;
+    height: 80px;
     color: #363062;
     align-items: center;
     justify-content: center;
@@ -102,25 +103,33 @@ img{
     padding-right: 30px;
 }
 .body{
-    position: fixed;
-    top: 130px;
-    left: 275px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 85px;
+    left: 240px;
+    overflow: auto;
+    overflow-y: scroll;
+}
+.align{
+    display: flex;
+    width: calc(100% - 320px);
+    justify-content: space-evenly;
+    gap: 25px;
+    overflow-y: auto;
 }
 h1{
     margin: 0px;
     padding: 0px;
 }
-.align{
-    display: flex;
-}
+
 .card1{
-    position: absolute;
-    height: 191px;
+    height: 175px;
     width: 339px;
     border-radius: 12px;
-    background: linear-gradient(258.22deg, #e872f8 3.37%, #e872f8 3.38%, #e872f8 96.49%);
+    background: linear-gradient(258.22deg, #A563EB 3.37%, #A563EB 3.38%, #A563EB 96.49%);
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .top h6{
     margin: 0px;
@@ -152,7 +161,12 @@ h1{
 }
 .icon{
     width: 40px;
-    margin-right: 25px;
+    margin-right: 16px;
+}
+.icon1{
+    width: 25px;
+    height: 30px;
+    margin-right: 28px;
 }
 .left h6{
     margin: 0px;
@@ -164,5 +178,105 @@ h1{
     line-height: 21px;
     letter-spacing: 0.2em;
     color: #FFEF60;
-    margin-left: 25px;
+    margin-left: 18px;
+}
+.card2{
+    height: 175px;
+    width: 339px;
+    border-radius: 12px;
+    background: linear-gradient(258.22deg, #68CF29 3.37%, #68CF29 3.38%, #68CF29 96.49%);
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+    margin-top: 25px;
+}
+.card3{
+    height: 175px;
+    width: 339px;
+    border-radius: 12px;
+    background: linear-gradient(258.22deg, #DF36E2 3.37%, #DF36E2 3.38%, #DF36E2 96.49%);
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+    margin-top: 25px;
+}
+.card4{
+    height: 175px;
+    width: 339px;
+    border-radius: 12px;
+    background: linear-gradient(258.22deg, #3A82EF 3.37%, #3A82EF 3.38%, #3A82EF 96.49%);
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+    margin-top: 25px;
+}
+
+/*Table CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap%27');
+.extra{
+    width: calc(100% - 375px);
+    padding: 25px;
+}
+table{
+    table-layout: fixed;
+    width: 100%;
+}
+.table-head{
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+.table-content{
+    margin: 0px;
+    padding: 0px;
+}
+.fi1 th{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 15px;
+    text-align: left;
+}
+.fi1 td{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 12px;
+    text-align: left;
+}
+.deliver{
+    border: 2px solid #EBF9F1;
+    width: 75px;
+    text-align: center;
+    border-radius: 22px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #1F9254;
+}
+.process{
+    border: 2px solid #FEF2E5;
+    width: 75px;
+    text-align: center;
+    border-radius: 22px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #CD6200;
+}
+.out{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tex{
+    margin: 0px;
+    padding: 0px;
+}
+.table-content{
+    border: 2px solid white;
+    height: 300px;
+    overflow-x: auto;
 }
